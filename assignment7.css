@@ -1,0 +1,48 @@
+/* Styles for the modal popup */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    height: 90vh;
+    margin: 0;
+    background-color: #550e0e; /* Set the background color to gray */
+}
+
+button {
+    display: block; /* Display buttons as block elements */
+    margin: 5px; /* Add margin for spacing */
+    width: 10%; /* Ensure buttons take full width */
+    text-align: center; /* Center the text within each button */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    padding: 10px; /* Add padding for better appearance */
+}
