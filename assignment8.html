@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assignment8.css">
+    <title>Roll a Dice Game</title>
+</head>
+<body>
+    <div class="player">
+        <h2>Player 1</h2>
+        <p>Score: <span id="player1Score">0</span></p>
+        <button id="player1Button" onclick="rollDice('player1')">Roll Dice</button>
+        <div class="die" id="player1Die"></div>
+    </div>
+    <div class="player">
+        <h2>Player 2</h2>
+        <p>Score: <span id="player2Score">0</span></p>
+        <button id="player2Button" onclick="rollDice('player2')">Roll Dice</button>
+        <div class="die" id="player2Die"></div>
+    </div>
+    <div id="result"></div>
+    <script src="assignment8.js"></script>
+</body>
+</html>
