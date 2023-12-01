@@ -1,0 +1,115 @@
+body {
+    background-color: #c79c65; /* Light beige */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    background-color: #4572b4; /* Complementary color to light beige */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a 5px shadow */
+    width: 50%;
+    position: relative;
+    animation: shake 0.5s ease-in-out; /* Shake animation */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(-5px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(5px);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.score-container {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a 5px shadow */
+    background-color: #da8138; /* Complementary color to light yellow */
+}
+
+#reset-btn,
+#check-btn,
+#guess-input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a 5px shadow */
+    background-color: #da8138; /* Complementary color to light yellow */
+}
+
+#check-btn {
+    margin-top: 0; /* Remove the top margin for the button */
+}
+
+#message {
+    color: #b63c3c; /* Dark red */
+    background-color: #738db4; /* Example background color */
+    width: 20%; /* Example width */
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+#title {
+    background-color: #738db4;
+    width: 50%;
+    padding: 10px;
+    margin: 35px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Add a 6px shadow */
+}
+
+
+.game-over {
+    background-color: #da4747; /* Complementary color to light coral */
+    border-radius: 10px;
+}
+
+.correct-guess {
+    background-color: #3e8756; /* Complementary color to mint green */
+    border-radius: 10px;
+}
+
+#guess-history {
+    list-style: none; /* Remove bullets from the unordered list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#rules-title-container,
+#guess-history-container {
+    background-color: #da8138; /* Background color for the title container */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the title container */
+    margin-bottom: 10px; /* Margin between the title container and rules container */
+}
+
+#rules-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff8e5; /* Lighter color for better readability */
+    border-radius: 10px; /* Rounded corners for the rules container */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a 5px shadow */
+}
+
+#guess-input,
+#check-btn {
+    background-color: #fff8e5; /* Match the rules container color for consistency */
+}

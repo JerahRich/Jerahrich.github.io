@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project2.css">
+    <title>Guess A Number Game</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Guess A Number Game</h1>
+    </div>
+    <div id="game-container">
+        <div class="header">
+             <div class="score-container">
+                <p>Guesses Left: <span id="current-score">10</span></p>
+                <p>High Score: <span id="history-high-score">0</span></p>
+            </div>
+            <div>
+                <button id="reset-btn">Start Over!</button>
+            </div>
+        </div>
+        <div id="rules-container">
+            <h2>Game Rules:</h2>
+            <p>Guess a number between 1 and 100.</p>
+            <p>I will generate a secret number which will be hidden to the to you.</p>
+            <p>you need to guess the number and check the result by typing the number into the box and then click on the check button.</p>
+            <p>You start with 10 guesses. .</p>
+            <p>Your score will decrease by 1 for each wrong guess. If it reaches 0, the game is over.</p>
+            <p>Invalid guesses or numbers outside the range 1-100 will show a message, and will be show in the History section</p>
+            <p>If you guess the correct number, the background will change, and your high score will update if it's higher than before.</p>
+            <p>Use the "Start over" button to start a new game.</p>
+        </div>
+
+           
+        
+        <div id="inner-container">
+            <input type="number" id="guess-input" placeholder="Enter your guess">
+            <button id="check-btn">Check</button>
+            <p id="message"></p> <!-- Placeholder for displaying too low or too high messages -->
+             <div id="guess-history-container">
+                    <h3>Guess History:</h3>
+                <ul id="guess-history"></ul>
+            </div>
+        </div>
+    </div>
+   
+    <script src="project2.js"></script>
+</body>
+</html>
