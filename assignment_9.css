@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(45deg, #8e44ad, #3498db);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+    border: none;
+    background: linear-gradient(45deg, #c5a8e6, #ffbdbd);
+    color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.list-group {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.card-header,
+.card-footer {
+    background-color: #6c5ce7;
+    color: #ecf0f1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: linear-gradient(45deg, #c5a8e6, #ffbdbd);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header,
+.modal-footer {
+    background: linear-gradient(45deg, #6c5ce7, #8e44ad);
+    color: #ecf0f1;
+    border-radius: 10px;
+}
+
+.modal-footer .btn {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#newTaskName {
+    border-radius: 5px;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.task-item input[type="checkbox"] {
+    margin-left: 10px;
+}
