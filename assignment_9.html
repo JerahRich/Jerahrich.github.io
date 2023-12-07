@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern To-Do List</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assignment91.css">
+    <link rel="stylesheet" href="assignment_9.css">
 </head>
 <body>
     <div class="container">
@@ -31,7 +28,7 @@
             </div>
             <div class="card-body">
                 <ul class="list-group" id="task-list">
-                    <!-- existing tasks will be appended here -->
+            
                 </ul>
             </div>
             <div class="card-footer text-muted text-center">
@@ -42,13 +39,6 @@
         </div>
     </div>
 
-    <!-- Bootstrap and Font Awesome CDN links -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="assignment91.js"></script>
-
-    <!-- Modal for adding a new task -->
     <div class="modal fade" id="addTaskModal" tabindex="-1" role="dialog" aria-labelledby="addTaskModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -60,19 +50,22 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group text-center">
-                        <!-- Add your form or content here -->
-                        <!-- For example, an input field for the task name -->
+                     
                         <input type="text" class="form-control" id="newTaskName" placeholder="Task Name">
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <!-- Close button for the modal -->
+                  
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- Add Task button for adding the task -->
+                  
                     <button type="button" class="btn btn-primary" id="addTaskBtn">Add Task</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assignment_9.js"></script>
 </body>
 </html>
