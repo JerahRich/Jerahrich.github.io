@@ -1,10 +1,9 @@
 $(document).ready(function () {
-  
     const deleteCompletedBtn = $('#delete-completed-btn');
     const deleteAllBtn = $('#delete-all-btn');
-    const newTaskNameInput = $('#newTaskName'); 
+    const newTaskNameInput = $('#newTaskName');
+    const addTaskBtn = $('#addTaskBtn'); // Add this line
 
-   
     deleteCompletedBtn.on('click', deleteCompletedTasks);
     deleteAllBtn.on('click', deleteAllTasks);
 
@@ -43,7 +42,6 @@ $(document).ready(function () {
 
     newTaskNameInput.on('keypress', function (e) {
         if (e.which === 13) {
-           
             addTask();
         }
     });
