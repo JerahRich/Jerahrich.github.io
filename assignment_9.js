@@ -2,7 +2,7 @@ $(document).ready(function () {
     const deleteCompletedBtn = $('#delete-completed-btn');
     const deleteAllBtn = $('#delete-all-btn');
     const newTaskNameInput = $('#newTaskName');
-    const addTaskBtn = $('#addTaskBtn'); // Add this line
+    const addTaskBtn = $('#addTaskBtn'); 
 
     deleteCompletedBtn.on('click', deleteCompletedTasks);
     deleteAllBtn.on('click', deleteAllTasks);
